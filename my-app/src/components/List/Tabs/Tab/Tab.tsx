@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from "./Tabs.module.scss";
 import { ITabProps } from "./Tab.types";
+import { Link } from "react-router-dom";
 
-export const Tab: React.FC<ITabProps> = ({ children }) => {
+export const Tab: React.FC<ITabProps> = ({ number, children, isActive }) => {
   return (
-    <div className={styles.tab}>
-      {children}
+    <div className={isActive ? `${styles.tab} ${styles.active}` : styles.tab}>
+      <Link to={`/navigator?tab=${number}`}>
+        {children}
+      </Link>
     </div>
   );
 };

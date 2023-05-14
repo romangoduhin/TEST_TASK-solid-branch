@@ -1,1 +1,0 @@
-export type ITab = "Income" | "Outcome" | "Loans" | "Investments";

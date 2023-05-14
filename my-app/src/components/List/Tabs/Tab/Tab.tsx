@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Tabs.module.scss";
+import styles from "./Tab.module.scss";
 import { ITabProps } from "./Tab.types";
 import { Link } from "react-router-dom";
 

@@ -1,11 +1,11 @@
-export type ITab = "income" | "outcome" | "loans" | "investments";
+export type IOperationType = "income" | "outcome" | "loan" | "investment";
 
-export type ITabIndex = 0 | 1 | 2 | 3;
+export type IOperationId = 0 | 1 | 2 | 3;
 
 export type IDataItem = {
   "_id": string,
   "amount": number,
-  "type": ITab,
+  "type": IOperationType,
   "name": {
     "first": string,
     "last": string

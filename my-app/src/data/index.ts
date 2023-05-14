@@ -1,13 +1,16 @@
 import json from "./data.json";
+import { IData, IDataItem } from "@globalTypes";
 import { getRandomNumber } from "../App.helpers";
 
-// if I understood correctly, we have incorrect field "amount" in json
+// If I understood correctly, we have incorrect field "amount" in json
 // which was incorrect created by JSON generator
 // that why I update this field value to random number
 
-const { total, data: incorrectData } = json;
+const newObject = JSON.parse(JSON.stringify(json));
 
-const updatedData = incorrectData.map(el => {
+let { total, data } = newObject;
+
+data = data.map((el: IDataItem) => {
     return {
       ...el,
       amount: getRandomNumber(1000)
@@ -15,4 +18,4 @@ const updatedData = incorrectData.map(el => {
   }
 );
 
-export const data = { total, ...updatedData };
+export const mockData = { total, data } as IData;

@@ -1,8 +1,7 @@
 import { ReactNode } from "react";
-import { ITabIndex } from "@globalTypes";
 
 export type ITabProps = {
-  number: ITabIndex,
+  operationId: string,
   children: ReactNode,
   isActive: boolean
 }

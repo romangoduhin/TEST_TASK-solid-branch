@@ -4,8 +4,8 @@ export type ITabIndex = 0 | 1 | 2 | 3;
 
 export type IDataItem = {
   "_id": string,
-  "amount": string,
-  "type": string,
+  "amount": number,
+  "type": ITab,
   "name": {
     "first": string,
     "last": string

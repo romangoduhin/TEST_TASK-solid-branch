@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./App.module.scss";
-import List from "./components/List";
+import { List } from "./components/List";
 
 const App: React.FC = () => {
   return (

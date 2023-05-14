@@ -1,0 +1,7 @@
+.tab {
+  @apply w-1/4 h-full flex-centred rounded-t-lg border-[1px] cursor-pointer;
+
+  &:hover {
+    @apply bg-gray-light;
+  }
+}

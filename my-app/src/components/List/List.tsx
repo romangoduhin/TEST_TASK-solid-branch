@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from "./List.module.scss";
+import { Tabs } from "./Tabs";
+import { Table } from "./Table";
 
-const List: React.FC = () => {
+
+export const List: React.FC = () => {
   return (
     <div className={styles.list}>
-      Hello world!
+      <Tabs/>
+      <Table/>
     </div>
   );
 };
-
-export default List;

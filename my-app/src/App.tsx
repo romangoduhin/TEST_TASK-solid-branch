@@ -1,13 +1,14 @@
 import React from 'react';
-import './App.css';
+import styles from "./App.module.scss";
+import List from "./components/List";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className={styles.wrapper}>
+      <List/>
+    </div>
   );
-}
+};
 
 
 export default App;

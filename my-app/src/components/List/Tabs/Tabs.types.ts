@@ -1,3 +1,3 @@
 export type ITabsProps = {
-  operationId: string,
+  operationId: number,
 }

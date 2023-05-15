@@ -1,3 +1,3 @@
 export type ITableProps = {
-  operationId: string,
+  operationId: number,
 }

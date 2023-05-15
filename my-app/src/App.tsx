@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styles from "./App.module.scss";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { List } from "./components/List";

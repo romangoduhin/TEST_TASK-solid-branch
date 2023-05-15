@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styles from "./Tab.module.scss";
 import { ITabProps } from "./Tab.types";
 import { Link } from "react-router-dom";

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styles from "./Row.module.scss";
 import { IRowProps } from "./Row.types";
 import { Cell } from "./Cell";

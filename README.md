@@ -6,6 +6,11 @@
 - npm i
 - npm run start
 
+# Pay attention on:
+If I understood correctly, we have incorrect field "amount" in json
+which was incorrect created by JSON generator
+that why I update this field value to random number
+
 # What I used for it?
 | Package name                                                                                        | Version  |                                                | 
 | ----------------------------------------------------------------------------------------------------|:--------:|:----------------------------------------------:|

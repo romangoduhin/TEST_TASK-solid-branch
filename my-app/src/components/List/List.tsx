@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./List.module.scss";
 import { Tabs } from "./Tabs";
 import { Table } from "./Table";
 import { useQuery } from "../../App.hooks";
@@ -14,7 +13,7 @@ export const List: React.FC = () => {
   if (!isOperationId) return <EmptyContent/>;
 
   return (
-    <div className={styles.list}>
+    <div className="p-0.5 w-[695px] h-[640px] rounded-lg border-[1px]">
       <Tabs operationId={operationId}/>
       <Table operationId={operationId}/>
     </div>

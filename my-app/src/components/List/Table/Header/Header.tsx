@@ -4,6 +4,6 @@ import { IHeaderProps } from "./Header.types";
 
 export const Header: React.FC<IHeaderProps> = ({ titles }) => {
   return (
-    <Row data={titles}/>
+    <Row className={"font-bold bg-gray-light"} data={titles}/>
   );
 };

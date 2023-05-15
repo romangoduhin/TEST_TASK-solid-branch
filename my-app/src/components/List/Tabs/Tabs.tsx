@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "./Tabs.module.scss";
 import { Tab } from "./Tab";
 import { ITabsProps } from "./Tabs.types";
 import { operations } from "../../../App.helpers";
 
 export const Tabs: React.FC<ITabsProps> = ({ operationId }) => {
   return (
-    <div className={styles.tabs}>
+    <div className="w-full h-[10%] flex flex-row">
       {operations.map(operation => {
           const operationIndex = operations.indexOf(operation);
           const isActive = operationId === operationIndex;

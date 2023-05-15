@@ -1,8 +1,10 @@
 import React from "react";
-import styles from "./EmptyContent.module.scss";
+import { IEmptyContentProps } from "./EmptyContent.types";
 
-export const EmptyContent: React.FC = () => {
+export const EmptyContent: React.FC<IEmptyContentProps> = ({ text }) => {
+  const DEFAULT_TEXT = "Nothing to show";
+
   return (
-    <div className={styles.emptyContent}>Nothing to show</div>
+    <div className="text-2xl text-white">{text ? text : DEFAULT_TEXT}</div>
   );
 };

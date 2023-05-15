@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "./Cell.module.scss";
 import { ICellProps } from "./Cell.types";
 
-export const Cell: React.FC<ICellProps> = ({ children }) => {
-  return <div className={styles.cell}>{children}</div>;
+export const Cell: React.FC<ICellProps> = ({ width, children }) => {
+  return (
+    <div className={`${width} h-full flex-centred`}>{children}</div>
+  );
 };
 

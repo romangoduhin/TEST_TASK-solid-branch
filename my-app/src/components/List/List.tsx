@@ -9,7 +9,9 @@ export const List: React.FC = () => {
   const tabNumber = useQuery("tab");
   const operationId = tabNumber && +tabNumber;
 
-  if (!operationId || operationId > 3 || operationId < 0) return <EmptyContent/>;
+  const isOperationId = typeof operationId === "number" && operationId <= 3 && operationId >= 0;
+
+  if (!isOperationId) return <EmptyContent/>;
 
   return (
     <div className={styles.list}>

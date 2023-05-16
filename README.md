@@ -1,5 +1,5 @@
 ## [Check it on Vercel](https://solid-branch-test-task.vercel.app/navigator?tab=0)
-
+# Task 2.2
 # How to start the project localy?
 - git clone this project
 - cd my-app
